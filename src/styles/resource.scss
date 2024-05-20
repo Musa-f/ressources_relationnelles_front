@@ -1,0 +1,93 @@
+.stepper{
+    .step-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        li{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: grey;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .step-content{
+        .form-step{
+            display: none;
+        }
+
+        #formStep3 {
+            div {
+                display: none;
+            }
+        }
+
+        select.select-users, .select2-container{
+            width: 100% !important;
+        }
+    }
+
+    .active-step-btn{
+        background-color: $color-primary !important;
+    }
+    
+    .active-step{
+        display: block !important;
+    } 
+
+    button#nextBtn{
+        background-color: $color-secondary;
+        color: white;
+        &:hover{
+            background-color: $color-secondary-2;
+        }
+    }
+}
+
+.resource-container{
+
+    .header-ressource{
+        .category{
+            background-color: $color-primary;
+            color: white;
+            cursor:default;
+        }
+    }
+
+    .content-resource{
+        min-height: 120px !important;
+    }
+
+    .interactions-btn{
+        display: flex;
+        width: 80px;
+        position: absolute;
+        flex-direction: column;
+        right: -50px;
+        margin: 30px 0;
+
+        button{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            margin: 10px 0;
+            border: 1px solid #e9ecef;
+            background-color: white;
+
+            &:hover{
+                background-color: #f1efef;
+            }
+        }
+    }
+}
